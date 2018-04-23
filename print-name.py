@@ -1,5 +1,6 @@
 print("This python program reprints your name");
 name=input("Enter your name here: ");
 print("You have entered "+ name);
-#print("It is of type:"+ typeof(name));
+print("Lets find your lucky number");
+lucky_number=input("Enter your lucky number: ");
 print("end of program");
