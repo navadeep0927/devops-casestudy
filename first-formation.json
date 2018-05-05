@@ -185,15 +185,6 @@
               },
   
               "files" : {
-                "/tmp/setup.mysql" : {
-                  "content" : { "Fn::Join" : ["", [
-                    "CREATE DATABASE ", { "Ref" : "DBName" }, ";\n",
-                    "GRANT ALL ON ", { "Ref" : "DBName" }, ".* TO '", { "Ref" : "DBUser" }, "'@localhost IDENTIFIED BY '", { "Ref" : "DBPassword" }, "';\n"
-                    ]]},
-                  "mode"  : "000400",
-                  "owner" : "root",
-                  "group" : "root"
-                },
                 "/etc/cfn/cfn-hup.conf" : {
                   "content" : { "Fn::Join" : ["", [
                     "[main]\n",
